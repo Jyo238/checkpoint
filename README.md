@@ -157,6 +157,27 @@ Each rediscovery wasted 20-30 minutes. After implementing Checkpoint, the AI rea
 **Before Checkpoint**: 3 sessions x 30 min rediscovery = 90 min wasted
 **After Checkpoint**: 0 min wasted. Memory is loaded in seconds.
 
+## Quick Start (30 seconds)
+
+```bash
+# Claude Code
+claude install-skill Jyo238/checkpoint
+
+# Then in any conversation:
+/checkpoint
+```
+
+That's it. Your AI will scan the conversation, extract key discoveries, and save them as persistent memory files. Next session, it reads them automatically.
+
+## Use Cases
+
+| Scenario | Without Checkpoint | With Checkpoint |
+|----------|-------------------|-----------------|
+| Multi-day debugging | Rediscover root cause every session | AI reads prior findings, picks up where it left off |
+| Team onboarding | Each person's AI re-learns the same gotchas | Shared memory files capture tribal knowledge |
+| Complex API integration | Forget auth quirks, endpoint patterns | All discoveries persisted and loaded automatically |
+| User preferences | "I told you not to do that" (again) | Feedback saved once, respected forever |
+
 ## Contributing
 
 Contributions are welcome! Feel free to:
